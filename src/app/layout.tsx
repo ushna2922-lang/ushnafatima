@@ -10,36 +10,113 @@ const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
-export const viewport: Viewport = {
-  themeColor: "#09090F",
-};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ushnafatima.vercel.app"),
 
-  title: "Ushna Fatima | Frontend Web Developer",
+  title: {
+    default: "Ushna Fatima | Frontend Developer",
+    template: "%s | Ushna Fatima",
+  },
 
   description:
-    "I build premium, fast, and responsive websites.",
+    "Frontend Developer specializing in modern, responsive, and high-performance web applications built with React, Next.js, TypeScript, and Tailwind CSS.",
+
+  keywords: [
+    "Ushna Fatima",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+    "Portfolio",
+    "Web Developer Pakistan",
+    "UI Developer",
+  ],
+
+  authors: [
+    {
+      name: "Ushna Fatima",
+    },
+  ],
+
+  creator: "Ushna Fatima",
+
+  publisher: "Ushna Fatima",
+
+  applicationName: "Ushna Portfolio",
+
+  category: "Technology",
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
+  },
 
   manifest: "/manifest.json",
 
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/branding/favicon-32x32.png", type: "image/png" },
+      { url: "/branding/favicon.ico" },
+      { url: "/branding/favicon-32x32.png", sizes: "32x32" },
+      { url: "/branding/favicon-16x16.png", sizes: "16x16" },
     ],
 
     apple: "/branding/apple-icon.png",
   },
 
-  appleWebApp: {
-    capable: true,
-    title: "Ushna",
-    statusBarStyle: "black-translucent",
+  openGraph: {
+    title: "Ushna Fatima | Frontend Developer",
+
+    description:
+      "Building premium, modern and responsive websites using Next.js, React and Tailwind CSS.",
+
+    url: "https://YOUR-VERCEL-DOMAIN.vercel.app",
+
+    siteName: "Ushna Portfolio",
+
+    locale: "en_US",
+
+    type: "website",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ushna Fatima Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Ushna Fatima | Frontend Developer",
+
+    description:
+      "Building premium, modern and responsive websites.",
+
+    images: ["/og-image.png"],
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#09090F",
+};
 
 export default function RootLayout({
   children,

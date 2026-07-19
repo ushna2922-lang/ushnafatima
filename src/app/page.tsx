@@ -49,7 +49,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="scroll-mt-28 w-full max-w-[1400px] px-6 md:px-12 flex flex-col md:flex-row items-center justify-center relative pt-24 lg:pt-32 pb-12"
+        className="scroll-mt-28 w-full max-w-[1400px] px-6 md:px-12 flex flex-col md:flex-row items-center justify-center relative pt-35 lg:pt-30 pb-12"
       >
 
         {/* Abstract Background Glows */}
@@ -61,7 +61,7 @@ export default function Home() {
           {/* Left Text Content */}
           <div className="flex flex-col items-start gap-6 lg:gap-8 w-full md:w-[50%] lg:w-[55%] z-10 pt-10 lg:pt-0">
             <div className="flex flex-col gap-4 lg:gap-5">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
                 Hi, I'm <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#06B6FF]">
                   Ushna Fatima

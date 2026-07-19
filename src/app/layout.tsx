@@ -6,6 +6,8 @@ import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
 import StructuredData from "@/components/structured-data";
 import PWARegister from "@/components/pwa-register";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 
 const inter = Inter({
   variable: "--font-sans",
@@ -136,6 +138,7 @@ return (
         <Footer />
       </ThemeProvider>
     </body>
+    <GoogleAnalytics gaId="G-JJ7QKKN0FN" />
   </html>
 );
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import StructuredData from "@/components/structured-data";
 import PWARegister from "@/components/pwa-register";
 
 const inter = Inter({
@@ -126,6 +127,7 @@ export default function RootLayout({
 return (
   <html lang="en" className={`${inter.variable} h-full antialiased`} data-scroll-behavior="smooth" suppressHydrationWarning>
     <body className="min-h-full flex flex-col bg-background text-text-primary selection:bg-primary/30">
+     <StructuredData />
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
          <PWARegister />
         <Navbar />

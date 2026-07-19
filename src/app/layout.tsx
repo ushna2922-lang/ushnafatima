@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import StructuredData from "@/components/structured-data";
 import PWARegister from "@/components/pwa-register";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -137,6 +137,7 @@ return (
         
         <Footer />
       </ThemeProvider>
+      <Analytics />
     </body>
     <GoogleAnalytics gaId="G-JJ7QKKN0FN" />
   </html>
